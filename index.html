@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Smoking &amp; intersectionality</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--<div id="raIntro" style="display: none;">-->
+<div id="raIntro" class="canvas-hide">
+
+</div>
+
+  
+<!--  <div id="ClearMe2" class="clear-me">   </div>-->
+    
+</div>  
+
+</div>
+  
+<div id="ra_canvas" class="canvas-hide">
+<div id="ra_square">
+<audio id="audio_intro">
+  <source src="https://criticalpublichealth.org/wp-content/uploads/2023/08/RiseUpTinyClipLongerFade_01.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+  
+<audio id="audio_player" ontimeupdate="audioProgressBar()" preload="auto" controls>
+  <source src="https://criticalpublichealth.org/wp-content/uploads/2023/08/001A_GSS-CS-F-07_WhenYouDontHaveMoney.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+<audio id="audio_player2" ontimeupdate="audioProgressBar2()" preload="auto" controls>
+  <source src="https://criticalpublichealth.org/wp-content/uploads/2023/08/GSS-CS-F-6_01.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<audio id="audio_player3" ontimeupdate="audioProgressBar3()" preload="auto" controls>
+  <source src="https://criticalpublichealth.org/wp-content/uploads/2023/08/GSS-CS-F-5-1_01_HardestWorked.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<audio id="audio_player4" ontimeupdate="audioProgressBar4()" preload="auto" controls>
+  <source src="https://criticalpublichealth.org/wp-content/uploads/2023/08/GSS-CS-F-12-3_InTheMedia_01.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<div id="ap1" class="audioprogress audioprogress1 not-clickable">
+  <svg id="circle1" class="progressCircle" x="0px" y="0px" width="166px" height="166px" viewBox="0 0 166 166" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle class="progressbarTrack" stroke-miterlimit="10" cx="83" cy="83" r="80" fill="transparent"></circle>
+    <circle id="bar" class="progressbarLoading" stroke-miterlimit="10" cx="83" cy="83" r="80" stroke-dasharray="502" stroke-dashoffset="-502" fill="transparent"></circle>
+  </svg>
+  <a href="" id="audio_control" class="control">Play/Pause<span>
+    <span id="C1L1" class="one"><i></i><em></em></span>
+    <span id="C1L2"class="two"><i></i><em></em></span>
+  </span></a>
+</div>
+<div class="dashoffset"><span id="dashoffset"></span></div>
+<div  id="ap2" class="audioprogress audioprogress2 not-clickable">
+  <svg class="progressCircle" x="0px" y="0px" width="166px" height="166px" viewBox="0 0 166 166" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle class="progressbarTrack" stroke-miterlimit="10" cx="83" cy="83" r="80" fill="transparent"></circle>
+    <circle id="bar2" class="progressbarLoading" stroke-miterlimit="10" cx="83" cy="83" r="80" stroke-dasharray="502" stroke-dashoffset="-502" fill="transparent"></circle>
+  </svg>
+  <a href="" id="audio_control2" class="control">Play/Pause<span>
+    <span id="C2L1" class="one"><i></i><em></em></span>
+    <span id="C2L2" class="two"><i></i><em></em></span>
+  </span></a>
+</div>
+<div class="dashoffset"><span id="dashoffset2"></span></div>  
+
+<div  id="ap3" class="audioprogress audioprogress3 not-clickable">
+  <svg class="progressCircle" x="0px" y="0px" width="166px" height="166px" viewBox="0 0 166 166" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle class="progressbarTrack" stroke-miterlimit="10" cx="83" cy="83" r="80" fill="transparent"></circle>
+    <circle id="bar3" class="progressbarLoading" stroke-miterlimit="10" cx="83" cy="83" r="80" stroke-dasharray="502" stroke-dashoffset="-502" fill="transparent"></circle>
+  </svg>
+  <a href="" id="audio_control3" class="control">Play/Pause<span>
+    <span id="C3L1" class="one"><i></i><em></em></span>
+    <span id="C3L2" class="two"><i></i><em></em></span>
+  </span></a>
+</div>
+<div class="dashoffset"><span id="dashoffset3"></span></div>  
+
+<div  id="ap4" class="audioprogress audioprogress4 not-clickable">
+  <svg class="progressCircle" x="0px" y="0px" width="166px" height="166px" viewBox="0 0 166 166" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle class="progressbarTrack" stroke-miterlimit="10" cx="83" cy="83" r="80" fill="transparent"></circle>
+    <circle id="bar4" class="progressbarLoading" stroke-miterlimit="10" cx="83" cy="83" r="80" stroke-dasharray="502" stroke-dashoffset="-502" fill="transparent"></circle>
+  </svg>
+  <a href="" id="audio_control4" class="control">Play/Pause<span>
+    <span id="C4L1" class="one"><i></i><em></em></span>
+    <span id="C4L2" class="two"><i></i><em></em></span>
+  </span></a>
+</div>
+<div class="dashoffset"><span id="dashoffset4"></span></div>  
+
+<div id="Navigator" class="nope">
+  <div id="arrow1">&#8600</div><div id="arrow1Text" class="arrow-text">Inequity causes stress</div>
+<div id="arrow2">&#8601<div id="arrow2Text" class="arrow-text">Smoking is a way to cope with stress</div></div>
+<div id="arrow3">&#8598<div id="arrow3Text" class="arrow-text">Smoking triggers stigma</div></div>
+<div id="arrow4">&#8599<div id="arrow4Text" class="arrow-text">Smoking stigma reinforces inequity</div></div>
+  
+  
+<div id="blobs1" class="blobs">
+  <div id="b1"></div>
+  <div id="b2"></div>
+  <div id="b3"></div>
+  <div id="b4"></div>
+  <div id="bSelector" class="blob blob5 hider"></div>
+</div>
+
+<div id="txt1">INEQUITY</div>
+<div id="txt2">STRESS</div>
+<div id="txt3">COPING</div>  
+<div id="txt4">STIGMA</div>
+  
+<div class="blobsA">
+<div id="b1a"></div>
+<div id="b2a"></div>
+<div id="b3a"></div>
+<div id="b4a"></div>
+<div id="b5a" class="blobA blob5a hider"></div>
+
+</div>
+  
+<!--<div id="Lb1" class="LbFrame fade-in in4A" onmouseover="showL1()" onmouseout="hideL1()">
+</div>-->
+<div id="Lb1" onmouseover="reshape1()" onmouseout="reshape2()">
+</div>
+<div id="hideLb1" class="LbFrameHide" onmouseover="reshape1()" onmouseout="reshape2()">
+</div>
+  
+<!--<div id="Lb2" class="LbFrame fade-in in4A" onmouseover="showL3()" onmouseout="hideL2()">
+</div>-->
+<div id="Lb2" onmouseover="reshape1()" onmouseout="reshape2()">
+</div>
+<div id="hideLb2" class="LbFrameHide" onmouseover="reshape1()" onmouseout="reshape2()">
+</div>
+<!--<div id="Lb3" class="LbFrame fade-in in4A" onmousemove="showL3()" onmouseout="hideL3()">
+</div>-->
+<div id="Lb3" onmouseover="reshape1()" onmouseout="reshape2()">
+</div>
+<div id="hideLb3" class="LbFrameHide">
+</div>
+<!--<div id="Lb4" class="LbFrame fade-in in4A" onmousemove="showL4()" onmouseout="hideL4()">
+</div>-->
+<div id="Lb4" onmouseover="reshape1()" onmouseout="reshape2()">
+</div>
+<div id="hideLb4" class="LbFrameHide">
+</div>
+  
+</div> 
+</div> 
+
+
+  
+<div id = "ra_right">
+
+
+<!--<div id="raIntro1" class="scroll-out out1">-->
+<div id="raIntro1">
+<div id="raBlockBG"></div>  
+<div id="raBlock" >  
+  <div id="I1" class="hider">Touch the diamond to navigate.</div>
+  <div id="I2" class="hider">Click on the circles to learn more.</div>
+<!--<div id="I4" class="scroll-sig in4">-<a href="https://www.law.columbia.edu/fac/Kimberl%C3%A9_Crenshaw">Kimberlé Williams Crenshaw</a></div>-->
+</div>
+</div>  
+  
+  
+<div id = "ra_BGR">
+
+  
+<div id="blobs2" class = "blobsTxt">
+  <div id="bSelector6" class="blob blob6 hider"></div>
+  <div id="b7"></div>
+  <div id="b8"></div>
+  <div id="b9"></div>
+</div>
+   
+<div id="blobs2a" class="blobsTxtA">
+  <div id="b6a"  class="blobA blob6a hider"> </div>
+  <div id="b7a"></div>
+  <div id="b8a"></div>
+  <div id="b9a"></div>
+  </div>  
+    
+ </div>  
+  
+  
+  
+  
+  
+<div id="ra_title" class="nope">
+  <h1 id="ra_txt" style="width:100%;">smoking&intersectionality</h1>
+</div>  
+</div>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/TweenMax.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
